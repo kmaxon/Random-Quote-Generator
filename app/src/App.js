@@ -104,8 +104,9 @@ function App() {
   const quoteBoxStyle = {
     backgroundColor: "white",
     color: color,
-    height: "50vh",
+    height: "auto",
     width: "50vw",
+    paddingBottom: "60px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

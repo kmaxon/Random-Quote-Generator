@@ -145,7 +145,7 @@ function App() {
           <DisplayAuthor author={quoteObj} />
         </div>
         <div>
-        <a id="tweet-quote" style={twitterLinkStyle} href={tweetUrl} target="_blank" rel="noopener noreferrer">
+          <a id="tweet-quote" style={twitterLinkStyle} href={tweetUrl} target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
           <button id="new-quote" style={buttonStyle} onClick={ClickHandler}>New Quote</button>

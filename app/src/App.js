@@ -40,8 +40,8 @@ function App() {
   const tweetText = `"${quoteObj.currentQuote}" - ${quoteObj.currentAuthor}`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
   
-  const quotationMarks = "\""; 
-  
+  const quotationMarks = "\"";
+
   const backgroundStyle = {
     backgroundColor: color
   };
@@ -53,17 +53,13 @@ function App() {
   return (
     <div id="app" style={backgroundStyle}>
       <div id="quote-box" style={colorStyle}>
-        <div id="text">
-          <h1 id="quote-text">
-            {quotationMarks + quoteObj.currentQuote + quotationMarks}
-          </h1>
-        </div>
-        <div id="author">
-          <h2 id="author-text">
-            {"- " + quoteObj.currentAuthor}
-          </h2>
-        </div>
-        <div>
+        <h1 id="quote-text">
+          {quotationMarks + quoteObj.currentQuote + quotationMarks}
+        </h1>
+        <h2 id="author-text">
+          {"- " + quoteObj.currentAuthor}
+        </h2>
+        <div id="buttons">
           <a id="tweet-quote" class="twitterLink" style={backgroundStyle} href={tweetUrl} target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
